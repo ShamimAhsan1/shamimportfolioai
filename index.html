@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shamim Ahsan | AI Solutions Architect & Full-Stack Creative Studio</title>
+  <meta name="description" content="Portfolio of Shamim Ahsan - Next-Gen AI Solutions Architect specializing in AI Video, AI Photo, AI Content, AI Software, and Modern Web Development.">
+  <meta name="keywords" content="Shamim Ahsan, AI Services, AI Video Generation, AI Photo Generation, AI Software Development, AI Website Development, Portfolio">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Glowing Ambient Background Blurs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Interactive Canvas Particle Field -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-brand">
+        <div class="logo-icon">
+          <i class="fa-solid fa-brain-circuit"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Shamim Ahsan</span>
+          <span class="logo-badge">AI Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#services" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Services</a></li>
+          <li><a href="#pricing" class="nav-link"><i class="fa-solid fa-tags"></i> Package Price</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About Us</a></li>
+          <li><a href="#contract" class="nav-link"><i class="fa-solid fa-file-signature"></i> Contract Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <a href="#contract" class="btn btn-sm btn-glow">
+          <span>Start Contract</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <i class="fa-solid fa-brain-circuit text-cyan"></i>
+        <span>Shamim Ahsan</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Navigation Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#services" class="drawer-link"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Services</a></li>
+      <li><a href="#pricing" class="drawer-link"><i class="fa-solid fa-tags"></i> Package Price</a></li>
+      <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user-astronaut"></i> About Us</a></li>
+      <li><a href="#contract" class="drawer-link"><i class="fa-solid fa-file-signature"></i> Contract Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contract" class="btn btn-primary w-full">
+        <i class="fa-solid fa-file-signature"></i> Book 30-Day Service
+      </a>
+      <div class="drawer-socials">
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:contact@shamimahsan.ai" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- ==============================================
+         SECTION 1: HOME (HERO)
+         ============================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge-pill" data-aos="fade-up">
+            <span class="pulse-indicator"></span>
+            <span>Available for 30-Day Dedicated Contracts & Sprints</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting The Future With <br>
+            <span class="gradient-text text-glow">Artificial Intelligence</span>
+          </h1>
+
+          <div class="hero-typing-box">
+            <span class="typing-prefix">I specialize in:</span>
+            <span class="typing-text" id="typewriter">AI Video Generation</span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            Hello, I am <strong class="text-white">Shamim Ahsan</strong>. I craft ultra-modern, production-grade 
+            AI workflows, generative media, custom intelligent software, and high-converting web applications 
+            for businesses, founders, and innovators worldwide.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-primary">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Explore AI Services</span>
+            </a>
+            <a href="#pricing" class="btn btn-secondary">
+              <i class="fa-solid fa-tags"></i>
+              <span>View Packages ($50 - $550)</span>
+            </a>
+            <a href="#contract" class="btn btn-outline">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>Open Contract Form</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Counter -->
+          <div class="hero-stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-target="150">0</div>
+              <div class="stat-plus">+</div>
+              <div class="stat-label">AI Projects Delivered</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="99">0</div>
+              <div class="stat-plus">%</div>
+              <div class="stat-label">Client Success Rate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="30">0</div>
+              <div class="stat-plus">Days</div>
+              <div class="stat-label">Guaranteed Sprint Cycle</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="5">0</div>
+              <div class="stat-plus">Core</div>
+              <div class="stat-label">Specialized AI Pillars</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="hero-card-tilt">
+            <div class="hero-image-frame">
+              <img src="assets/hero-visual.jpg" alt="AI Neural Core Hologram" class="hero-main-img">
+              <div class="hologram-overlay"></div>
+              
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right">
+                <i class="fa-solid fa-bolt text-yellow"></i>
+                <div>
+                  <strong>Ultra-Fast GPU</strong>
+                  <span>Cloud Cluster Active</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <i class="fa-solid fa-shield-halved text-cyan"></i>
+                <div>
+                  <strong>30 Days Service</strong>
+                  <span>Full Delivery Guarantee</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Profile Pill in Hero -->
+            <div class="hero-author-pill">
+              <img src="assets/shamim-portrait.jpg" alt="Shamim Ahsan" class="author-mini-avatar">
+              <div class="author-mini-info">
+                <span class="author-mini-name">Shamim Ahsan</span>
+                <span class="author-mini-title"><i class="fa-solid fa-circle-check text-cyan"></i> AI Solutions Architect</span>
+              </div>
+              <a href="#about" class="author-mini-btn" title="View Full Bio">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Ticker -->
+      <div class="tech-marquee-wrapper">
+        <div class="marquee-track">
+          <div class="marquee-item"><i class="fa-brands fa-python"></i> Python / PyTorch</div>
+          <div class="marquee-item"><i class="fa-solid fa-brain"></i> OpenAI GPT-4o</div>
+          <div class="marquee-item"><i class="fa-brands fa-google"></i> Google Gemini 1.5/2.0</div>
+          <div class="marquee-item"><i class="fa-solid fa-clapperboard"></i> Sora & Runway Gen-3</div>
+          <div class="marquee-item"><i class="fa-solid fa-camera"></i> Midjourney v6 & Flux</div>
+          <div class="marquee-item"><i class="fa-brands fa-react"></i> React & Next.js</div>
+          <div class="marquee-item"><i class="fa-brands fa-node-js"></i> Node.js & FastAPI</div>
+          <div class="marquee-item"><i class="fa-solid fa-database"></i> Vector DBs / RAG</div>
+          <div class="marquee-item"><i class="fa-brands fa-docker"></i> Docker & RunPod</div>
+          <!-- Repeat for smooth infinite scroll -->
+          <div class="marquee-item"><i class="fa-brands fa-python"></i> Python / PyTorch</div>
+          <div class="marquee-item"><i class="fa-solid fa-brain"></i> OpenAI GPT-4o</div>
+          <div class="marquee-item"><i class="fa-brands fa-google"></i> Google Gemini 1.5/2.0</div>
+          <div class="marquee-item"><i class="fa-solid fa-clapperboard"></i> Sora & Runway Gen-3</div>
+          <div class="marquee-item"><i class="fa-solid fa-camera"></i> Midjourney v6 & Flux</div>
+          <div class="marquee-item"><i class="fa-brands fa-react"></i> React & Next.js</div>
+          <div class="marquee-item"><i class="fa-brands fa-node-js"></i> Node.js & FastAPI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 2: AI SERVICES
+         ============================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-microchip"></i> Core Competencies</div>
+          <h2 class="section-title">Comprehensive <span class="gradient-text">AI Services</span></h2>
+          <p class="section-subtitle">
+            5 end-to-end intelligent disciplines tailored for modern companies, content studios, and tech startups. 
+            Select any service to inspect detailed deliverables or include in your 30-day contract.
+          </p>
+
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All 5 Services</button>
+            <button class="filter-btn" data-filter="media">Multimedia & Generative Visuals</button>
+            <button class="filter-btn" data-filter="development">Software & Web Development</button>
+            <button class="filter-btn" data-filter="content">Content & Written Synthesis</button>
+          </div>
+        </div>
+
+        <!-- 5 AI Services Grid -->
+        <div class="services-grid">
+          
+          <!-- SERVICE 1: AI Video Generation -->
+          <div class="service-card" data-category="media" id="service-video">
+            <div class="service-img-wrap">
+              <img src="assets/service-video.jpg" alt="AI Video Generation Studio" class="service-card-img">
+              <div class="service-badge"><i class="fa-solid fa-video"></i> Video Studio</div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-meta">
+                <span class="service-code">SVC-01</span>
+                <span class="service-turnaround"><i class="fa-regular fa-clock"></i> 4K / 60fps</span>
+              </div>
+              <h3 class="service-title">AI Video Generation</h3>
+              <p class="service-desc">
+                High-definition cinematic generative videos, viral social clips, dynamic AI talking avatars, 
+                and photorealistic commercial animations powered by Sora, Runway Gen-3, Kling, and Luma.
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Cinematic Text-to-Video & Image-to-Video</li>
+                <li><i class="fa-solid fa-check"></i> Hyper-Realistic Digital Avatars & Voice Clone</li>
+                <li><i class="fa-solid fa-check"></i> Commercial Product Motion Graphics</li>
+                <li><i class="fa-solid fa-check"></i> 4K Upscaling, Color Grading & Sound FX</li>
+              </ul>
+              <div class="service-card-footer">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-service="video">
+                  <i class="fa-solid fa-circle-info"></i> Full Specs
+                </button>
+                <button class="btn btn-sm btn-primary select-service-contract" data-service="AI Video Generation">
+                  <i class="fa-solid fa-plus"></i> Add to Contract
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 2: AI Photo Generation -->
+          <div class="service-card" data-category="media" id="service-photo">
+            <div class="service-img-wrap">
+              <img src="assets/service-photo.jpg" alt="AI Photo Generation" class="service-card-img">
+              <div class="service-badge"><i class="fa-solid fa-camera-retro"></i> Visual Synthesis</div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-meta">
+                <span class="service-code">SVC-02</span>
+                <span class="service-turnaround"><i class="fa-regular fa-clock"></i> 8K Master Resolution</span>
+              </div>
+              <h3 class="service-title">AI Photo Generation</h3>
+              <p class="service-desc">
+                Masterpiece character photography, commercial advertising imagery, concept art, 
+                and customized LoRA model training tailored to your exact brand guidelines and aesthetic.
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Custom Brand LoRA & Character Consistency</li>
+                <li><i class="fa-solid fa-check"></i> Commercial Fashion & Studio Product Photos</li>
+                <li><i class="fa-solid fa-check"></i> Conceptual Sci-Fi / Fantasy Illustration</li>
+                <li><i class="fa-solid fa-check"></i> Inpainting, Outpainting & Vector Conversion</li>
+              </ul>
+              <div class="service-card-footer">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-service="photo">
+                  <i class="fa-solid fa-circle-info"></i> Full Specs
+                </button>
+                <button class="btn btn-sm btn-primary select-service-contract" data-service="AI Photo Generation">
+                  <i class="fa-solid fa-plus"></i> Add to Contract
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 3: AI Article Writing -->
+          <div class="service-card" data-category="content" id="service-writing">
+            <div class="service-img-wrap">
+              <img src="assets/service-writing.jpg" alt="AI Article Writing" class="service-card-img">
+              <div class="service-badge"><i class="fa-solid fa-pen-nib"></i> Neural Copy</div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-meta">
+                <span class="service-code">SVC-03</span>
+                <span class="service-turnaround"><i class="fa-regular fa-clock"></i> 100% Humanized & SEO</span>
+              </div>
+              <h3 class="service-title">AI Article Writing & Copy</h3>
+              <p class="service-desc">
+                Data-backed, search-dominating thought leadership articles, technical whitepapers, 
+                high-converting sales landing copy, and automated content engines tuned to your brand's voice.
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> In-depth SEO Research & Semantic Keywords</li>
+                <li><i class="fa-solid fa-check"></i> Technical AI, FinTech, & SaaS Long-form Posts</li>
+                <li><i class="fa-solid fa-check"></i> Multi-channel Social Copy & Email Sequences</li>
+                <li><i class="fa-solid fa-check"></i> Plagiarism-Free, Fact-Checked & Calibrated</li>
+              </ul>
+              <div class="service-card-footer">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-service="writing">
+                  <i class="fa-solid fa-circle-info"></i> Full Specs
+                </button>
+                <button class="btn btn-sm btn-primary select-service-contract" data-service="AI Article Writing">
+                  <i class="fa-solid fa-plus"></i> Add to Contract
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 4: AI Software Development -->
+          <div class="service-card" data-category="development" id="service-software">
+            <div class="service-img-wrap">
+              <img src="assets/service-software.jpg" alt="AI Software Development" class="service-card-img">
+              <div class="service-badge"><i class="fa-solid fa-code"></i> Engineering</div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-meta">
+                <span class="service-code">SVC-04</span>
+                <span class="service-turnaround"><i class="fa-regular fa-clock"></i> Production Ready</span>
+              </div>
+              <h3 class="service-title">AI Software Development</h3>
+              <p class="service-desc">
+                Custom autonomous AI agents, enterprise RAG (Retrieval-Augmented Generation) knowledge bases, 
+                intelligent microservices, and custom API pipelines built with Python, FastAPI, LangChain & OpenAI/Claude.
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Autonomous Multi-Agent Workflows</li>
+                <li><i class="fa-solid fa-check"></i> Private Document Q&A / Vector Search RAG</li>
+                <li><i class="fa-solid fa-check"></i> Custom Fine-Tuned Model Inference APIs</li>
+                <li><i class="fa-solid fa-check"></i> Scalable Cloud Deployments & Security Guardrails</li>
+              </ul>
+              <div class="service-card-footer">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-service="software">
+                  <i class="fa-solid fa-circle-info"></i> Full Specs
+                </button>
+                <button class="btn btn-sm btn-primary select-service-contract" data-service="AI Software Development">
+                  <i class="fa-solid fa-plus"></i> Add to Contract
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICE 5: AI Website Development -->
+          <div class="service-card" data-category="development" id="service-web">
+            <div class="service-img-wrap">
+              <img src="assets/service-web.jpg" alt="AI Website Development" class="service-card-img">
+              <div class="service-badge"><i class="fa-solid fa-globe"></i> Web Systems</div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-meta">
+                <span class="service-code">SVC-05</span>
+                <span class="service-turnaround"><i class="fa-regular fa-clock"></i> Lightning Fast & Responsive</span>
+              </div>
+              <h3 class="service-title">AI Website Development</h3>
+              <p class="service-desc">
+                Next-generation web applications engineered with Next.js, React, Tailwind CSS, 
+                featuring embedded AI assistants, real-time streaming interfaces, and responsive cyber-aesthetic designs.
+              </p>
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Next.js 14/15 App Router & React Architecture</li>
+                <li><i class="fa-solid fa-check"></i> Embedded AI Chatbots & Copilot Widgets</li>
+                <li><i class="fa-solid fa-check"></i> High Conversion UI/UX with Smooth Animations</li>
+                <li><i class="fa-solid fa-check"></i> Responsive Mobile, Tablet & Desktop Optimization</li>
+              </ul>
+              <div class="service-card-footer">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-service="web">
+                  <i class="fa-solid fa-circle-info"></i> Full Specs
+                </button>
+                <button class="btn btn-sm btn-primary select-service-contract" data-service="AI Website Development">
+                  <i class="fa-solid fa-plus"></i> Add to Contract
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 3: PACKAGE PRICE
+         ============================================== -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-gem"></i> Transparent Investment</div>
+          <h2 class="section-title">Package <span class="gradient-text">Pricing & Offers</span></h2>
+          <p class="section-subtitle">
+            Every package guarantees <strong>30 Days of Dedicated Service</strong> with progressive tier benefits. 
+            Choose the package tailored to your scope or lock in our high-value Studio tier.
+          </p>
+
+          <!-- Billing Frequency Toggle -->
+          <div class="billing-toggle-wrap">
+            <span class="toggle-label" id="lblMonthly">Monthly Dedicated</span>
+            <label class="switch">
+              <input type="checkbox" id="billingCycleToggle">
+              <span class="slider round"></span>
+            </label>
+            <span class="toggle-label" id="lblSprint">30-Day Sprint (Fixed SOW) <span class="pill-badge">Popular</span></span>
+          </div>
+        </div>
+
+        <!-- 3 Packages Cards -->
+        <div class="pricing-cards-grid">
+          
+          <!-- PACKAGE 1: Standard Package ($300) -->
+          <div class="price-card" id="pkg-standard">
+            <div class="price-card-header">
+              <div class="pkg-tag">Core Entry</div>
+              <h3 class="pkg-name">Standard Package</h3>
+              <p class="pkg-summary">Ideal for individuals and startups needing essential AI deliverables.</p>
+              <div class="pkg-price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-base="300">300</span>
+                <span class="period">/ 30 Days</span>
+              </div>
+              <div class="pkg-guarantee">
+                <i class="fa-solid fa-calendar-check text-cyan"></i> 30 Days Continuous Service
+              </div>
+            </div>
+
+            <div class="price-card-body">
+              <div class="offer-level">
+                <div class="level-label">Offer Coverage: <span>Essential Scope</span></div>
+                <div class="level-bar"><div class="level-fill fill-30"></div></div>
+              </div>
+              
+              <ul class="pkg-features-list">
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> <strong>1 Primary AI Service</strong> of your choice</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> 15 High-Resolution AI Photos OR 5 Short Videos</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> Up to 4 SEO-Optimized Articles (4,000 words total)</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> Single Page AI Landing or UI Layout</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> 2 Iterative Review Rounds</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-cyan"></i> Standard Email Support (24h turnaround)</li>
+                <li class="disabled"><i class="fa-solid fa-circle-xmark text-muted"></i> Custom LoRA Model Training</li>
+                <li class="disabled"><i class="fa-solid fa-circle-xmark text-muted"></i> Full AI Software API & Agents</li>
+                <li class="disabled"><i class="fa-solid fa-circle-xmark text-muted"></i> 24/7 Dedicated Private Channel</li>
+              </ul>
+            </div>
+
+            <div class="price-card-footer">
+              <button class="btn btn-outline-cyan w-full select-package-btn" data-package="Standard Package" data-price="300">
+                <span>Select Standard ($300)</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- PACKAGE 2: Pro Package ($550) - Highlighted -->
+          <div class="price-card featured" id="pkg-pro">
+            <div class="featured-ribbon">Most Popular</div>
+            <div class="price-card-header">
+              <div class="pkg-tag text-purple">High Growth</div>
+              <h3 class="pkg-name">Pro Package</h3>
+              <p class="pkg-summary">Engineered for scaling brands and companies needing dynamic multimodal output.</p>
+              <div class="pkg-price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-base="550">550</span>
+                <span class="period">/ 30 Days</span>
+              </div>
+              <div class="pkg-guarantee">
+                <i class="fa-solid fa-calendar-check text-purple"></i> 30 Days Continuous Service
+              </div>
+            </div>
+
+            <div class="price-card-body">
+              <div class="offer-level">
+                <div class="level-label">Offer Coverage: <span>Advanced Scale</span></div>
+                <div class="level-bar"><div class="level-fill fill-70"></div></div>
+              </div>
+
+              <ul class="pkg-features-list">
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> <strong>Up to 3 Combined AI Services</strong></li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> 40 8K Master Photos + 15 Cinematic AI Videos</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> 10 Comprehensive SEO Articles & Ad Campaigns</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> Multi-Page Next.js / AI Interactive Web App</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> Custom Chatbot & RAG Integration</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> 5 Iterative Revision Rounds</li>
+                <li class="active"><i class="fa-solid fa-circle-check text-purple"></i> Priority WhatsApp / Discord Channel Support</li>
+                <li class="disabled"><i class="fa-solid fa-circle-xmark text-muted"></i> Unlimited On-Demand Sprint Requests</li>
+                <li class="disabled"><i class="fa-solid fa-circle-xmark text-muted"></i> 24/7 Dedicated Cloud GPU Node</li>
+              </ul>
+            </div>
+
+            <div class="price-card-footer">
+              <button class="btn btn-primary w-full select-package-btn" data-package="Pro Package" data-price="550">
+                <span>Select Pro ($550)</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- PACKAGE 3: Studio Package ($50) - Maximum Offer -->
+          <div class="price-card studio-glow" id="pkg-studio">
+            <div class="special-badge"><i class="fa-solid fa-crown text-yellow"></i> Maximum Offer</div>
+            <div class="price-card-header">
+              <div class="pkg-tag text-gold">All-Inclusive Studio Suite</div>
+              <h3 class="pkg-name">Studio Package</h3>
+              <p class="pkg-summary">The ultimate full-service powerhouse with maximum offers and complete AI capabilities.</p>
+              <div class="pkg-price-box">
+                <span class="currency">$</span>
+                <span class="price-val" data-base="50">50</span>
+                <span class="period">/ 30 Days</span>
+              </div>
+              <div class="pkg-guarantee">
+                <i class="fa-solid fa-calendar-check text-gold"></i> 30 Days Continuous Full Studio Service
+              </div>
+            </div>
+
+            <div class="price-card-body">
+              <div class="offer-level">
+                <div class="level-label">Offer Coverage: <span>Maximum Offer (100% Unlocked)</span></div>
+                <div class="level-bar"><div class="level-fill fill-100"></div></div>
+              </div>
+
+              <ul class="pkg-features-list">
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> <strong>ALL 5 AI Services Included Simultaneously</strong></li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Unlimited AI Video Generation & Avatar Storyboards</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Unlimited AI Photo Generation & Custom Brand LoRA</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Complete SEO Article Suite & Technical Documentation</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Enterprise AI Software, Multi-Agent RAG & APIs</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Full-Stack AI Responsive Web App Deployed Live</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> <strong>Unlimited Revisions</strong> throughout the 30 days</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> Dedicated Cloud GPU Cluster Allocation</li>
+                <li class="active"><i class="fa-solid fa-star text-gold"></i> 24/7 Direct 1-on-1 VIP Hotline with Shamim Ahsan</li>
+              </ul>
+
+              <!-- Note on Studio Package value -->
+              <div class="studio-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Configured at the requested special rate of <strong>$50 USD</strong> with maximum studio deliverables unlocked.</span>
+              </div>
+            </div>
+
+            <div class="price-card-footer">
+              <button class="btn btn-gold w-full select-package-btn" data-package="Studio Package" data-price="50">
+                <span>Select Studio ($50)</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Comparative Breakdown Table -->
+        <div class="comparison-container">
+          <div class="comparison-toggle-header">
+            <h3><i class="fa-solid fa-table-list text-cyan"></i> Detailed Package Comparison Matrix</h3>
+            <button class="btn btn-sm btn-ghost" id="toggleComparisonBtn">
+              <span id="cmpText">Show Full Matrix</span> <i class="fa-solid fa-chevron-down" id="cmpIcon"></i>
+            </button>
+          </div>
+          
+          <div class="comparison-table-wrapper" id="comparisonWrapper" style="display: none;">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Features & Service Deliverables</th>
+                  <th>Standard ($300)</th>
+                  <th>Pro ($550)</th>
+                  <th>Studio ($50 - Max Offer)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Service Duration</strong></td>
+                  <td>30 Days</td>
+                  <td>30 Days</td>
+                  <td>30 Days Dedicated</td>
+                </tr>
+                <tr>
+                  <td><strong>Included AI Disciplines</strong></td>
+                  <td>1 Selected Service</td>
+                  <td>Up to 3 Services</td>
+                  <td><span class="badge-accent">All 5 Services Unlocked</span></td>
+                </tr>
+                <tr>
+                  <td><strong>AI Video Generation</strong></td>
+                  <td>5 Clips (HD)</td>
+                  <td>15 Clips (4K)</td>
+                  <td>Unlimited 4K + Avatars</td>
+                </tr>
+                <tr>
+                  <td><strong>AI Photo Generation</strong></td>
+                  <td>15 Photos</td>
+                  <td>40 Photos (8K)</td>
+                  <td>Unlimited + Custom LoRAs</td>
+                </tr>
+                <tr>
+                  <td><strong>AI Article Writing</strong></td>
+                  <td>4 Articles (4k words)</td>
+                  <td>10 Articles (SEO)</td>
+                  <td>Full Strategic Content Hub</td>
+                </tr>
+                <tr>
+                  <td><strong>AI Software & Custom RAG</strong></td>
+                  <td><i class="fa-solid fa-minus text-muted"></i></td>
+                  <td>Chatbot Integration</td>
+                  <td>Full Autonomous Agents & API</td>
+                </tr>
+                <tr>
+                  <td><strong>AI Website Development</strong></td>
+                  <td>Single Landing Page</td>
+                  <td>Multi-Page App</td>
+                  <td>Full-Stack Custom App + Deploy</td>
+                </tr>
+                <tr>
+                  <td><strong>Revision Rounds</strong></td>
+                  <td>2 Rounds</td>
+                  <td>5 Rounds</td>
+                  <td><strong>Unlimited Revisions</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Support Response Time</strong></td>
+                  <td>Within 24 Hours</td>
+                  <td>Within 6 Hours (WhatsApp)</td>
+                  <td><strong>Instant 24/7 VIP Hotline</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 4: ABOUT US (SHAMIM AHSAN)
+         ============================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Left Column: Portrait & Stats -->
+          <div class="about-visual-col">
+            <div class="about-card-frame">
+              <img src="assets/shamim-portrait.jpg" alt="Shamim Ahsan - AI Solutions Architect" class="about-portrait-img">
+              <div class="about-badge-bottom">
+                <div class="status-dot"></div>
+                <div>
+                  <strong>Shamim Ahsan</strong>
+                  <span>Founder & Lead AI Engineer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Experience Highlights -->
+            <div class="about-milestones-box">
+              <div class="milestone-item">
+                <div class="m-icon"><i class="fa-solid fa-code-branch text-cyan"></i></div>
+                <div class="m-text">
+                  <strong>Production AI Deployments</strong>
+                  <p>Orchestrating robust LLMs, diffusion models, and automated pipeline infrastructures.</p>
+                </div>
+              </div>
+              <div class="milestone-item">
+                <div class="m-icon"><i class="fa-solid fa-handshake text-purple"></i></div>
+                <div class="m-text">
+                  <strong>30-Day Guaranteed Sprints</strong>
+                  <p>Structured milestones, daily asynchronous updates, and clear deliverables.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Biography & Details -->
+          <div class="about-text-col">
+            <div class="section-tag"><i class="fa-solid fa-user-astronaut"></i> The Creator Behind The Tech</div>
+            <h2 class="section-title">Meet <span class="gradient-text">Shamim Ahsan</span></h2>
+            
+            <p class="about-lead">
+              A forward-thinking <strong>AI Solutions Architect, Generative Artist, and Full-Stack Software Developer</strong> 
+              dedicated to transforming conceptual business visions into automated, hyper-scalable AI solutions.
+            </p>
+
+            <div class="about-story">
+              <p>
+                With deep expertise spanning generative video synthesis, photorealistic visual rendering, 
+                high-impact technical copywriting, and full-stack software architecture, I bridge the gap 
+                between raw AI research and real-world commercial impact.
+              </p>
+              <p>
+                Whether you need a full 30-day dedicated development sprint, an autonomous customer service agent, 
+                or a viral generative media campaign, my commitment is clear: <em>speed, mathematical precision, 
+                and uncompromising aesthetic excellence</em>.
+              </p>
+            </div>
+
+            <!-- Core Skill Matrix -->
+            <div class="skills-block">
+              <h4 class="skills-title"><i class="fa-solid fa-sliders text-cyan"></i> Core Specializations & Proficiency</h4>
+              
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span>Generative AI Media (Video & 8K Visuals)</span>
+                  <span>98%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill fill-98"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span>AI Software, Autonomous Agents & RAG</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill fill-95"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span>Full-Stack Web Engineering (React, Next.js, Node)</span>
+                  <span>96%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill fill-96"></div></div>
+              </div>
+
+              <div class="skill-bar-wrap">
+                <div class="skill-info">
+                  <span>SEO AI Content Engines & Copywriting</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-track"><div class="skill-fill fill-92"></div></div>
+              </div>
+            </div>
+
+            <!-- About Action Buttons -->
+            <div class="about-actions">
+              <a href="#contract" class="btn btn-primary">
+                <i class="fa-solid fa-handshake-simple"></i>
+                <span>Work with Shamim</span>
+              </a>
+              <a href="mailto:contact@shamimahsan.ai" class="btn btn-outline">
+                <i class="fa-regular fa-envelope"></i>
+                <span>contact@shamimahsan.ai</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         SECTION 5: CONTRACT US / CONTACT FORM
+         ============================================== -->
+    <section class="section contract-section" id="contract">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-file-signature"></i> Official Engagement</div>
+          <h2 class="section-title">Initiate Your <span class="gradient-text">30-Day Service Contract</span></h2>
+          <p class="section-subtitle">
+            Fill out the official project contract agreement below. As you configure your parameters, 
+            a live Statement of Work (SOW) is generated instantly for Shamim Ahsan.
+          </p>
+        </div>
+
+        <div class="contract-container-grid">
+          
+          <!-- Left: Fillable Contract Form -->
+          <div class="contract-form-card">
+            <div class="form-card-header">
+              <div class="header-icon"><i class="fa-solid fa-file-pen text-cyan"></i></div>
+              <div>
+                <h3>Project Agreement Form</h3>
+                <p>Complete all fields to initiate your 30-day service engagement.</p>
+              </div>
+            </div>
+
+            <form id="contractForm" class="contract-form" novalidate>
+              
+              <!-- Client Information Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                  <input type="text" id="clientName" name="clientName" placeholder="e.g. Alex Morgan" required>
+                  <span class="field-error" id="errName">Please enter your full name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientEmail"><i class="fa-solid fa-envelope"></i> Business Email *</label>
+                  <input type="email" id="clientEmail" name="clientEmail" placeholder="e.g. alex@company.com" required>
+                  <span class="field-error" id="errEmail">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <!-- Company & Phone Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientCompany"><i class="fa-solid fa-building"></i> Company / Brand</label>
+                  <input type="text" id="clientCompany" name="clientCompany" placeholder="e.g. Nova Media Labs">
+                </div>
+
+                <div class="form-group">
+                  <label for="clientPhone"><i class="fa-solid fa-phone"></i> Phone / WhatsApp</label>
+                  <input type="tel" id="clientPhone" name="clientPhone" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+
+              <!-- Package Selection Radio Buttons -->
+              <div class="form-group">
+                <label class="section-label"><i class="fa-solid fa-tags"></i> Select Service Package *</label>
+                <div class="package-radio-group">
+                  
+                  <label class="package-radio-label">
+                    <input type="radio" name="selectedPackage" value="Standard Package" data-cost="300" checked>
+                    <div class="package-radio-box">
+                      <div class="pkg-radio-top">
+                        <span class="pkg-radio-name">Standard Package</span>
+                        <span class="pkg-radio-price">$300</span>
+                      </div>
+                      <span class="pkg-radio-sub">30-day sprint, essential scope</span>
+                    </div>
+                  </label>
+
+                  <label class="package-radio-label">
+                    <input type="radio" name="selectedPackage" value="Pro Package" data-cost="550">
+                    <div class="package-radio-box featured-box">
+                      <div class="pkg-radio-top">
+                        <span class="pkg-radio-name">Pro Package</span>
+                        <span class="pkg-radio-price">$550</span>
+                      </div>
+                      <span class="pkg-radio-sub">30-day sprint, advanced volume</span>
+                    </div>
+                  </label>
+
+                  <label class="package-radio-label">
+                    <input type="radio" name="selectedPackage" value="Studio Package" data-cost="50">
+                    <div class="package-radio-box studio-box">
+                      <div class="pkg-radio-top">
+                        <span class="pkg-radio-name">Studio Package</span>
+                        <span class="pkg-radio-price">$50</span>
+                      </div>
+                      <span class="pkg-radio-sub">30-day sprint, maximum offers</span>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- AI Services Multi-Select Checkboxes -->
+              <div class="form-group">
+                <label class="section-label"><i class="fa-solid fa-list-check"></i> Desired AI Services (Select 1 or more) *</label>
+                <div class="services-checkbox-grid">
+                  
+                  <label class="service-checkbox-item">
+                    <input type="checkbox" name="desiredServices" value="AI Video Generation" checked>
+                    <span class="check-box"><i class="fa-solid fa-check"></i></span>
+                    <span class="check-text"><i class="fa-solid fa-video text-cyan"></i> AI Video Generation</span>
+                  </label>
+
+                  <label class="service-checkbox-item">
+                    <input type="checkbox" name="desiredServices" value="AI Photo Generation" checked>
+                    <span class="check-box"><i class="fa-solid fa-check"></i></span>
+                    <span class="check-text"><i class="fa-solid fa-camera-retro text-purple"></i> AI Photo Generation</span>
+                  </label>
+
+                  <label class="service-checkbox-item">
+                    <input type="checkbox" name="desiredServices" value="AI Article Writing">
+                    <span class="check-box"><i class="fa-solid fa-check"></i></span>
+                    <span class="check-text"><i class="fa-solid fa-pen-nib text-cyan"></i> AI Article Writing</span>
+                  </label>
+
+                  <label class="service-checkbox-item">
+                    <input type="checkbox" name="desiredServices" value="AI Software Development">
+                    <span class="check-box"><i class="fa-solid fa-check"></i></span>
+                    <span class="check-text"><i class="fa-solid fa-code text-purple"></i> AI Software Development</span>
+                  </label>
+
+                  <label class="service-checkbox-item">
+                    <input type="checkbox" name="desiredServices" value="AI Website Development">
+                    <span class="check-box"><i class="fa-solid fa-check"></i></span>
+                    <span class="check-text"><i class="fa-solid fa-globe text-cyan"></i> AI Website Development</span>
+                  </label>
+
+                </div>
+                <span class="field-error" id="errServices">Please select at least one AI service</span>
+              </div>
+
+              <!-- Project Description & Scope -->
+              <div class="form-group">
+                <label for="projectBrief"><i class="fa-solid fa-align-left"></i> Project Brief & Objectives *</label>
+                <textarea id="projectBrief" name="projectBrief" rows="4" placeholder="Detail your project goals, preferred art styles, software specs, or target timeline..." required></textarea>
+                <span class="field-error" id="errBrief">Please provide a brief summary of your project requirements</span>
+              </div>
+
+              <!-- Timeline & Target Start Date -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="startDate"><i class="fa-solid fa-calendar-day"></i> Preferred Start Date</label>
+                  <input type="date" id="startDate" name="startDate">
+                </div>
+
+                <div class="form-group">
+                  <label for="contractTerm"><i class="fa-solid fa-stopwatch"></i> Contract Term Duration</label>
+                  <input type="text" id="contractTerm" value="30 Days Guaranteed Service" readonly class="input-readonly">
+                </div>
+              </div>
+
+              <!-- Digital Signature Field -->
+              <div class="form-group">
+                <label for="digitalSignature"><i class="fa-solid fa-signature"></i> Authorized Digital Signature *</label>
+                <input type="text" id="digitalSignature" name="digitalSignature" placeholder="Type your full legal name as digital signature" required>
+                <span class="field-error" id="errSignature">Digital signature is required to validate the contract</span>
+              </div>
+
+              <!-- Terms Agreement Checkbox -->
+              <div class="terms-agreement-row">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="agreeTerms" required>
+                  <span class="checkmark"></span>
+                  <span class="terms-text">
+                    I acknowledge this agreement engages <strong>Shamim Ahsan</strong> for 30 days of dedicated service, 
+                    governed by agreed deliverables, milestone reviews, and intellectual property transfer upon completion.
+                  </span>
+                </label>
+                <span class="field-error" id="errTerms">You must accept the service terms to proceed</span>
+              </div>
+
+              <!-- Form Submit Actions -->
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary btn-lg w-full" id="btnSubmitContract">
+                  <i class="fa-solid fa-file-circle-check"></i>
+                  <span>Sign & Execute Contract</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right: Live Real-Time Contract Preview -->
+          <div class="contract-preview-card">
+            <div class="preview-header">
+              <div class="preview-status">
+                <span class="pulse-green"></span>
+                <span>LIVE SOW DOCUMENT DRAFT</span>
+              </div>
+              <div class="preview-id" id="contractRef">REF: SA-2026-OCT</div>
+            </div>
+
+            <div class="preview-document-body" id="liveDocBody">
+              <div class="doc-title-block">
+                <h4>STATEMENT OF WORK & SERVICE AGREEMENT</h4>
+                <p>Provider: <strong>Shamim Ahsan</strong> (AI Solutions Architect)</p>
+              </div>
+
+              <div class="doc-meta-grid">
+                <div class="doc-meta-cell">
+                  <span class="cell-label">Client Name:</span>
+                  <strong class="cell-val" id="prevClientName">[Pending Input]</strong>
+                </div>
+                <div class="doc-meta-cell">
+                  <span class="cell-label">Email:</span>
+                  <strong class="cell-val" id="prevClientEmail">[Pending Input]</strong>
+                </div>
+                <div class="doc-meta-cell">
+                  <span class="cell-label">Company:</span>
+                  <strong class="cell-val" id="prevClientCompany">Independent / Startup</strong>
+                </div>
+                <div class="doc-meta-cell">
+                  <span class="cell-label">Service Cycle:</span>
+                  <strong class="cell-val text-cyan">30 Days Dedicated</strong>
+                </div>
+              </div>
+
+              <div class="doc-section">
+                <span class="doc-sec-heading">SELECTED SERVICE PACKAGE:</span>
+                <div class="preview-pkg-highlight" id="prevPkgBox">
+                  <span class="prev-pkg-title" id="prevPkgName">Standard Package</span>
+                  <span class="prev-pkg-price" id="prevPkgCost">$300 USD</span>
+                </div>
+              </div>
+
+              <div class="doc-section">
+                <span class="doc-sec-heading">COVERED AI SERVICE DISCIPLINES:</span>
+                <ul class="preview-services-list" id="prevServicesList">
+                  <li><i class="fa-solid fa-check text-cyan"></i> AI Video Generation</li>
+                  <li><i class="fa-solid fa-check text-cyan"></i> AI Photo Generation</li>
+                </ul>
+              </div>
+
+              <div class="doc-section">
+                <span class="doc-sec-heading">PROJECT SCOPE SUMMARY:</span>
+                <p class="preview-scope-text" id="prevScopeText">
+                  Awaiting project brief input. Deliverables will adhere strictly to the 30-day timeline with milestone reviews.
+                </p>
+              </div>
+
+              <div class="doc-section doc-signature-block">
+                <div class="sig-half">
+                  <span class="sig-title">Service Provider:</span>
+                  <div class="sig-val script-font">Shamim Ahsan</div>
+                  <span class="sig-date">AI Solutions Architect</span>
+                </div>
+                <div class="sig-half">
+                  <span class="sig-title">Client Authorized Signer:</span>
+                  <div class="sig-val script-font" id="prevSigVal">[Unsigned]</div>
+                  <span class="sig-date" id="prevSigDate">Date: 2026-10-12</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="preview-actions">
+              <button class="btn btn-sm btn-ghost w-full" id="btnPrintDraft">
+                <i class="fa-solid fa-print"></i> Print / Save Draft Preview
+              </button>
+            </div>
+
+            <!-- Direct Contact Box -->
+            <div class="direct-contact-subcard">
+              <h5><i class="fa-solid fa-headset text-cyan"></i> Direct Channel Connect</h5>
+              <p>Prefer an instant direct discussion? Shamim Ahsan is available via:</p>
+              <div class="direct-channels">
+                <a href="mailto:contact@shamimahsan.ai" class="channel-pill">
+                  <i class="fa-solid fa-envelope"></i> contact@shamimahsan.ai
+                </a>
+                <a href="https://wa.me/" target="_blank" class="channel-pill">
+                  <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials & Social Proof -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag"><i class="fa-solid fa-comments"></i> Proven Feedback</div>
+          <h2 class="section-title">What Clients Say About <span class="gradient-text">Shamim</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Shamim orchestrated our 30-day AI video generation and brand overhaul. The speed, prompt precision, and 4K quality exceeded every expectation. He is a master of generative workflows."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div>
+                <strong>Marcus Vance</strong>
+                <span>Founder, Apex Synthetic Media</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "We booked the Studio package for our Next.js web application and custom RAG knowledge base. Shamim delivered ahead of schedule with 24/7 dedicated support throughout the 30 days."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+              <div>
+                <strong>Elena Rostova</strong>
+                <span>Head of Engineering, CyberSphere</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote">
+              "Shamim Ahsan’s AI photo generation and SEO article engines brought 400% more inbound traction to our SaaS in our first month. The contract process was seamless and transparent."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fa-solid fa-user-check"></i></div>
+              <div>
+                <strong>Daniel Chen</strong>
+                <span>CMO, Horizon Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <i class="fa-solid fa-brain-circuit text-cyan"></i>
+          <span>Shamim Ahsan</span>
+        </div>
+        <p class="footer-tagline">
+          Elevating creative production, automated workflows, and software development through the power of Artificial Intelligence.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">AI Services (5 Disciplines)</a></li>
+          <li><a href="#pricing">Package Price ($50 - $550)</a></li>
+          <li><a href="#about">About Shamim Ahsan</a></li>
+          <li><a href="#contract">Contract Us Form</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services-col">
+        <h4>AI Capabilities</h4>
+        <ul>
+          <li><a href="#services">AI Video Generation</a></li>
+          <li><a href="#services">AI Photo Generation</a></li>
+          <li><a href="#services">AI Article Writing</a></li>
+          <li><a href="#services">AI Software Development</a></li>
+          <li><a href="#services">AI Website Development</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contract-col">
+        <h4>30-Day Guarantee</h4>
+        <p>Every active contract is backed by structured 30-day deliverables and milestone reviews.</p>
+        <div class="footer-contact-quick">
+          <i class="fa-solid fa-envelope text-cyan"></i>
+          <a href="mailto:contact@shamimahsan.ai">contact@shamimahsan.ai</a>
+        </div>
+        <div class="footer-contact-quick">
+          <i class="fa-solid fa-location-dot text-purple"></i>
+          <span>Dhaka, Bangladesh & Global Remote</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container bottom-flex">
+        <p>&copy; 2026 Shamim Ahsan. All rights reserved.</p>
+        <div class="bottom-links">
+          <span>Privacy & Confidentiality Protected</span>
+          <span>•</span>
+          <span>30-Day Service Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       INTERACTIVE MODALS
+       ============================================== -->
+
+  <!-- 1. Service Deep-Dive Modal -->
+  <div class="modal-backdrop" id="serviceModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeServiceModal" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-service-icon" id="modalServiceIcon"><i class="fa-solid fa-video"></i></div>
+        <div>
+          <span class="modal-tag" id="modalServiceTag">AI Specification</span>
+          <h3 class="modal-title" id="modalServiceTitle">AI Video Generation</h3>
+        </div>
+      </div>
+      <div class="modal-body" id="modalServiceBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalCancelBtn">Close</button>
+        <button class="btn btn-primary" id="modalSelectContractBtn">
+          <i class="fa-solid fa-file-signature"></i> Add to 30-Day Contract
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Contract Execution Success Modal -->
+  <div class="modal-backdrop" id="successModal" aria-hidden="true">
+    <div class="modal-card success-card">
+      <div class="success-icon-wrap">
+        <i class="fa-solid fa-circle-check text-cyan"></i>
+      </div>
+      <h3 class="success-title">Contract Signed & Executed!</h3>
+      <p class="success-subtitle">
+        Your 30-day service contract with <strong>Shamim Ahsan</strong> has been generated and queued for onboarding.
+      </p>
+
+      <div class="success-summary-box" id="successSummaryBox">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="success-actions">
+        <button class="btn btn-outline" id="btnPrintFinalDoc">
+          <i class="fa-solid fa-print"></i> Print Official Agreement
+        </button>
+        <button class="btn btn-primary" id="btnCloseSuccessModal">
+          <i class="fa-solid fa-check"></i> Return to Portfolio
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-info" id="toastIcon"></i>
+    <span id="toastMessage">Contract initialized</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
